@@ -62,9 +62,9 @@ void PX4AirframeLoader::loadAirframeMetaData(void)
         // First look for meta data that comes from a firmware download. Fall back to resource if not there.
         airframeFilename = aiframeMetaDataFile();
     }
-    if (airframeFilename.isEmpty() || !QFile(airframeFilename).exists()) {
+    //if (airframeFilename.isEmpty() || !QFile(airframeFilename).exists()) {
         airframeFilename = ":/AutoPilotPlugins/PX4/AirframeFactMetaData.xml";
-    }
+    //}
 
     qCDebug(PX4AirframeLoaderLog) << "Loading meta data file:" << airframeFilename;
 
