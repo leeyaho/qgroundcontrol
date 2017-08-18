@@ -3,7 +3,7 @@
   <version>1</version>
   <airframe_version_major>1</airframe_version_major>
   <airframe_version_minor>1</airframe_version_minor>
-  <!--airframe_group image="HexaRotorPlus" name="Hexarotor +">
+  <airframe_group image="HexaRotorPlus" name="Hexarotor +">
     <airframe id="7001" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;" name="Generic Hexarotor + geometry">
       <class>Copter</class>
       <maintainer>Lorenz Meier &lt;lorenz@px4.io&gt;</maintainer>
@@ -18,7 +18,7 @@
       <output name="AUX2">feed-through of RC AUX2 channel</output>
       <output name="AUX3">feed-through of RC AUX3 channel</output>
     </airframe>
-  </airframe_group-->
+  </airframe_group>
   <!--airframe_group image="Y6B" name="Hexarotor Coaxial">
     <airframe id="11001" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;" name="Generic Hexa coaxial geometry">
       <class>Copter</class>
