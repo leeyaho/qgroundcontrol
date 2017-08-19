@@ -19,7 +19,7 @@
       <output name="AUX3">feed-through of RC AUX3 channel</output>
     </airframe>
   </airframe_group>
-  <!--airframe_group image="Y6B" name="Hexarotor Coaxial">
+  <airframe_group image="Y6B" name="Hexarotor Coaxial">
     <airframe id="11001" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;" name="Generic Hexa coaxial geometry">
       <class>Copter</class>
       <maintainer>Lorenz Meier &lt;lorenz@px4.io&gt;</maintainer>
@@ -34,7 +34,7 @@
       <output name="AUX2">feed-through of RC AUX2 channel</output>
       <output name="AUX3">feed-through of RC AUX3 channel</output>
     </airframe>
-  </airframe_group-->
+  </airframe_group>
   <airframe_group image="HexaRotorX" name="Hexarotor x">
     <airframe id="6001" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;" name="Generic Hexarotor x geometry">
       <class>Copter</class>
@@ -51,7 +51,7 @@
       <output name="AUX3">feed-through of RC AUX3 channel</output>
     </airframe>
   </airframe_group>
-  <!--airframe_group image="OctoRotorXCoaxial" name="Octo Coax Wide">
+  <airframe_group image="OctoRotorXCoaxial" name="Octo Coax Wide">
     <airframe id="12002" maintainer="Simon Wilks &lt;simon@uaventure.com&gt;" name="Steadidrone MAVRIK">
       <class>Copter</class>
       <maintainer>Simon Wilks &lt;simon@uaventure.com&gt;</maintainer>
@@ -65,8 +65,8 @@
       <output name="MAIN7">motor 7</output>
       <output name="MAIN8">motor 8</output>
     </airframe>
-  </airframe_group-->
-  <!--airframe_group image="OctoRotorPlus" name="Octorotor +">
+  </airframe_group>
+  <airframe_group image="OctoRotorPlus" name="Octorotor +">
     <airframe id="9001" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;" name="Generic Octocopter + geometry">
       <class>Copter</class>
       <maintainer>Lorenz Meier &lt;lorenz@px4.io&gt;</maintainer>
@@ -83,8 +83,8 @@
       <output name="AUX2">feed-through of RC AUX2 channel</output>
       <output name="AUX3">feed-through of RC AUX3 channel</output>
     </airframe>
-  </airframe_group-->
-  <!--airframe_group image="OctoRotorXCoaxial" name="Octorotor Coaxial">
+  </airframe_group>
+  <airframe_group image="OctoRotorXCoaxial" name="Octorotor Coaxial">
     <airframe id="12001" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;" name="Generic 10&quot; Octo coaxial geometry">
       <class>Copter</class>
       <maintainer>Lorenz Meier &lt;lorenz@px4.io&gt;</maintainer>
@@ -98,8 +98,8 @@
       <output name="MAIN7">motor 7</output>
       <output name="MAIN8">motor 8</output>
     </airframe>
-  </airframe_group-->
-  <!--airframe_group image="OctoRotorX" name="Octorotor x">
+  </airframe_group>
+  <airframe_group image="OctoRotorX" name="Octorotor x">
     <airframe id="8001" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;" name="Generic Octocopter X geometry">
       <class>Copter</class>
       <maintainer>Lorenz Meier &lt;lorenz@px4.io&gt;</maintainer>
@@ -116,8 +116,8 @@
       <output name="AUX2">feed-through of RC AUX2 channel</output>
       <output name="AUX3">feed-through of RC AUX3 channel</output>
     </airframe>
-  </airframe_group-->
-  <!--airframe_group image="QuadRotorPlus" name="Quadrotor +">
+  </airframe_group>
+  <airframe_group image="QuadRotorPlus" name="Quadrotor +">
     <airframe id="5001" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;" name="Generic 10&quot; Quad + geometry">
       <class>Copter</class>
       <maintainer>Lorenz Meier &lt;lorenz@px4.io&gt;</maintainer>
@@ -133,8 +133,8 @@
       <output name="AUX3">feed-through of RC AUX3 channel</output>
       <output name="AUX4">feed-through of RC FLAPS channel</output>
     </airframe>
-  </airframe_group-->
-  <!--airframe_group image="QuadRotorWide" name="Quadrotor Wide">
+  </airframe_group>
+  <airframe_group image="QuadRotorWide" name="Quadrotor Wide">
     <airframe id="10015" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;" name="Team Blacksheep Discovery">
       <class>Copter</class>
       <maintainer>Lorenz Meier &lt;lorenz@px4.io&gt;</maintainer>
@@ -193,8 +193,8 @@
       <output name="AUX3">feed-through of RC AUX3 channel</output>
       <output name="AUX4">feed-through of RC FLAPS channel</output>
     </airframe>
-  </airframe_group-->
-  <!--airframe_group image="AirframeUnknown" name="Quadrotor asymmetric">
+  </airframe_group>
+  <airframe_group image="AirframeUnknown" name="Quadrotor asymmetric">
     <airframe id="4051" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;" name="Spedix S250AQ">
       <class>Copter</class>
       <maintainer>Lorenz Meier &lt;lorenz@px4.io&gt;</maintainer>
@@ -207,8 +207,8 @@
       <output name="MAIN5">feed-through of RC AUX1 channel</output>
       <output name="MAIN6">feed-through of RC AUX2 channel</output>
     </airframe>
-  </airframe_group-->
-  <!--airframe_group image="QuadRotorX" name="Quadrotor x">
+  </airframe_group>
+  <airframe_group image="QuadRotorX" name="Quadrotor x">
     <airframe id="10020" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;" name="3DR DIY Quad">
       <class>Copter</class>
       <maintainer>Lorenz Meier &lt;lorenz@px4.io&gt;</maintainer>
@@ -294,7 +294,7 @@
       <maintainer>Anton Matosov &lt;anton.matosov@gmail.com&gt;</maintainer>
       <type>Quadrotor x</type>
     </airframe>
-  </airframe_group-->
+  </airframe_group>
   <airframe_group image="AirframeUnknown" name="Simulation (Copter)">
     <airframe id="1001" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;" name="HIL Quadcopter X">
       <class>Copter</class>
