@@ -5827,7 +5827,7 @@ if required for the gimbal (only in AUX output mode)</short_desc>
       </values>
     </parameter>
     <parameter default="0" name="RC_MAP_PARAM1" type="INT32">
-      <short_desc>PARAM1 tuning channel</short_desc>
+      <short_desc>A point channel</short_desc>
       <long_desc>Can be used for parameter tuning with the RC. This one is further referenced as the 1st parameter channel. Set to 0 to deactivate *</long_desc>
       <min>0</min>
       <max>18</max>
@@ -5855,7 +5855,7 @@ if required for the gimbal (only in AUX output mode)</short_desc>
       </values>
     </parameter>
     <parameter default="0" name="RC_MAP_PARAM2" type="INT32">
-      <short_desc>PARAM2 tuning channel</short_desc>
+      <short_desc>B point channel</short_desc>
       <long_desc>Can be used for parameter tuning with the RC. This one is further referenced as the 2nd parameter channel. Set to 0 to deactivate *</long_desc>
       <min>0</min>
       <max>18</max>
@@ -5882,8 +5882,92 @@ if required for the gimbal (only in AUX output mode)</short_desc>
         <value code="8">Channel 8</value>
       </values>
     </parameter>
+    <parameter default="0" name="RC_MAP_APT" type="INT32">
+      <short_desc>A-B channel</short_desc>
+      <long_desc>Can be used for parameter tuning with the RC. This one is further referenced as the 3th parameter channel. Set to 0 to deactivate *</long_desc>
+      <min>0</min>
+      <max>18</max>
+      <scope>modules/sensors</scope>
+      <values>
+        <value code="11">Channel 11</value>
+        <value code="10">Channel 10</value>
+        <value code="13">Channel 13</value>
+        <value code="12">Channel 12</value>
+        <value code="15">Channel 15</value>
+        <value code="14">Channel 14</value>
+        <value code="17">Channel 17</value>
+        <value code="16">Channel 16</value>
+        <value code="18">Channel 18</value>
+        <value code="1">Channel 1</value>
+        <value code="0">Unassigned</value>
+        <value code="3">Channel 3</value>
+        <value code="2">Channel 2</value>
+        <value code="5">Channel 5</value>
+        <value code="4">Channel 4</value>
+        <value code="7">Channel 7</value>
+        <value code="6">Channel 6</value>
+        <value code="9">Channel 9</value>
+        <value code="8">Channel 8</value>
+      </values>
+    </parameter>
+    <parameter default="0" name="RC_MAP_BPT" type="INT32">
+      <short_desc>B point channel</short_desc>
+      <long_desc>Can be used for parameter tuning with the RC. This one is further referenced as the 3th parameter channel. Set to 0 to deactivate *</long_desc>
+      <min>0</min>
+      <max>18</max>
+      <scope>modules/sensors</scope>
+      <values>
+        <value code="11">Channel 11</value>
+        <value code="10">Channel 10</value>
+        <value code="13">Channel 13</value>
+        <value code="12">Channel 12</value>
+        <value code="15">Channel 15</value>
+        <value code="14">Channel 14</value>
+        <value code="17">Channel 17</value>
+        <value code="16">Channel 16</value>
+        <value code="18">Channel 18</value>
+        <value code="1">Channel 1</value>
+        <value code="0">Unassigned</value>
+        <value code="3">Channel 3</value>
+        <value code="2">Channel 2</value>
+        <value code="5">Channel 5</value>
+        <value code="4">Channel 4</value>
+        <value code="7">Channel 7</value>
+        <value code="6">Channel 6</value>
+        <value code="9">Channel 9</value>
+        <value code="8">Channel 8</value>
+      </values>
+    </parameter>
+    <parameter default="0" name="RC_MAP_AB" type="INT32">
+      <short_desc>A-B channel</short_desc>
+      <long_desc>Can be used for parameter tuning with the RC. This one is further referenced as the 3th parameter channel. Set to 0 to deactivate *</long_desc>
+      <min>0</min>
+      <max>18</max>
+      <scope>modules/sensors</scope>
+      <values>
+        <value code="11">Channel 11</value>
+        <value code="10">Channel 10</value>
+        <value code="13">Channel 13</value>
+        <value code="12">Channel 12</value>
+        <value code="15">Channel 15</value>
+        <value code="14">Channel 14</value>
+        <value code="17">Channel 17</value>
+        <value code="16">Channel 16</value>
+        <value code="18">Channel 18</value>
+        <value code="1">Channel 1</value>
+        <value code="0">Unassigned</value>
+        <value code="3">Channel 3</value>
+        <value code="2">Channel 2</value>
+        <value code="5">Channel 5</value>
+        <value code="4">Channel 4</value>
+        <value code="7">Channel 7</value>
+        <value code="6">Channel 6</value>
+        <value code="9">Channel 9</value>
+        <value code="8">Channel 8</value>
+      </values>
+    </parameter>
     <parameter default="0" name="RC_MAP_PARAM3" type="INT32">
-      <short_desc>PARAM3 tuning channel</short_desc>
+      <short_desc>A-B channel</short_desc>
       <long_desc>Can be used for parameter tuning with the RC. This one is further referenced as the 3th parameter channel. Set to 0 to deactivate *</long_desc>
       <min>0</min>
       <max>18</max>

@@ -391,11 +391,13 @@ HEADERS += \
     src/api/QGCCorePlugin.h \
     src/api/QGCOptions.h \
     src/api/QmlComponentInfo.h \
+    src/AutoPilotPlugins/PX4/ControlComponent.h
 
 SOURCES += \
     src/api/QGCCorePlugin.cc \
     src/api/QGCOptions.cc \
     src/api/QmlComponentInfo.cc \
+    src/AutoPilotPlugins/PX4/ControlComponent.cc
 
 #
 # Unit Test specific configuration goes here (requires full debug build with all plugins)
@@ -979,6 +981,7 @@ PX4FirmwarePlugin {
         src/AutoPilotPlugins/PX4/SensorsComponentController.h \
         src/FirmwarePlugin/PX4/PX4FirmwarePlugin.h \
         src/FirmwarePlugin/PX4/PX4ParameterMetaData.h \
+        src/AutoPilotPlugins/PX4/ControlComponent.h \
 
     SOURCES += \
         src/AutoPilotPlugins/PX4/AirframeComponent.cc \
@@ -999,6 +1002,7 @@ PX4FirmwarePlugin {
         src/AutoPilotPlugins/PX4/SensorsComponentController.cc \
         src/FirmwarePlugin/PX4/PX4FirmwarePlugin.cc \
         src/FirmwarePlugin/PX4/PX4ParameterMetaData.cc \
+        src/AutoPilotPlugins/PX4/ControlComponent.cc \
 }
 
 PX4FirmwarePluginFactory {

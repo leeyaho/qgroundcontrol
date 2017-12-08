@@ -8,37 +8,37 @@
  ****************************************************************************/
 
 
-#include "PX4RadioComponent.h"
+#include "ControlComponent.h"
 #include "PX4AutoPilotPlugin.h"
 
-PX4RadioComponent::PX4RadioComponent(Vehicle* vehicle, AutoPilotPlugin* autopilot, QObject* parent) :
+ControlComponent::ControlComponent(Vehicle* vehicle, AutoPilotPlugin* autopilot, QObject* parent) :
     VehicleComponent(vehicle, autopilot, parent),
-    _name(tr("Radio"))
+    _name(tr("Control"))
 {
 }
 
-QString PX4RadioComponent::name(void) const
+QString ControlComponent::name(void) const
 {
     return _name;
 }
 
-QString PX4RadioComponent::description(void) const
+QString ControlComponent::description(void) const
 {
-    return tr("Radio Setup is used to calibrate your transmitter. "
-              "It also assign channels for Roll, Pitch, Yaw and Throttle vehicle control as well as determining whether they are reversed.");
+    return tr("Control Setup");// is used to calibrate your transmitter. "
+//              "It also assign channels for Roll, Pitch, Yaw and Throttle vehicle control as well as determining whether they are reversed.");
 }
 
-QString PX4RadioComponent::iconResource(void) const
+QString ControlComponent::iconResource(void) const
 {
-    return "/qmlimages/RadioComponentIcon.png";
+    return "/qmlimages/control.png";
 }
 
-bool PX4RadioComponent::requiresSetup(void) const
+bool ControlComponent::requiresSetup(void) const
 {
     return _vehicle->parameterManager()->getParameter(-1, "COM_RC_IN_MODE")->rawValue().toInt() == 1 ? false : true;
 }
 
-bool PX4RadioComponent::setupComplete(void) const
+bool ControlComponent::setupComplete(void) const
 {
     if (_vehicle->parameterManager()->getParameter(-1, "COM_RC_IN_MODE")->rawValue().toInt() != 1) {
         // The best we can do to detect the need for a radio calibration is look for attitude
@@ -55,7 +55,7 @@ bool PX4RadioComponent::setupComplete(void) const
     return true;
 }
 
-QStringList PX4RadioComponent::setupCompleteChangedTriggerList(void) const
+QStringList ControlComponent::setupCompleteChangedTriggerList(void) const
 {
     QStringList triggers;
     
@@ -64,13 +64,13 @@ QStringList PX4RadioComponent::setupCompleteChangedTriggerList(void) const
     return triggers;
 }
 
-QUrl PX4RadioComponent::setupSource(void) const
+QUrl ControlComponent::setupSource(void) const
 {
-    //return QUrl::fromUserInput("qrc:/qml/RadioComponent.qml");
-    return QUrl::fromLocalFile("C:/work/qgroundcontrol/src/AutoPilotPlugins/Common/RadioComponent.qml");
+    //    return QUrl::fromL("qrc:/qml/ControlComponent.qml");
+    return QUrl::fromLocalFile("C:/work/qgroundcontrol/src/AutoPilotPlugins/Common/ControlComponent.qml");
 }
 
-QUrl PX4RadioComponent::summaryQmlSource(void) const
+QUrl ControlComponent::summaryQmlSource(void) const
 {
     return QUrl::fromUserInput("qrc:/qml/PX4RadioComponentSummary.qml");
 }

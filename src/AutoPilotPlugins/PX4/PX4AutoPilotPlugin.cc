@@ -22,7 +22,7 @@
 #include "PowerComponent.h"
 #include "SafetyComponent.h"
 #include "SensorsComponent.h"
-
+#include "ControlComponent.h"
 /// @file
 ///     @brief This is the AutoPilotPlugin implementatin for the MAV_AUTOPILOT_PX4 type.
 ///     @author Don Gagne <don@thegagnes.com>
@@ -40,6 +40,7 @@ PX4AutoPilotPlugin::PX4AutoPilotPlugin(Vehicle* vehicle, QObject* parent)
     , _motorComponent(NULL)
     , _tuningComponent(NULL)
     , _syslinkComponent(NULL)
+    , _controlComponet(NULL)
 {
     if (!vehicle) {
         qWarning() << "Internal error";
@@ -121,6 +122,11 @@ const QVariantList& PX4AutoPilotPlugin::vehicleComponents(void)
                 _syslinkComponent->setupTriggerSignals();
                 _components.append(QVariant::fromValue((VehicleComponent*)_syslinkComponent));
             }
+
+            _controlComponet = new ControlComponent(_vehicle, this);
+            _controlComponet->setupTriggerSignals();
+            _components.append(QVariant::fromValue((VehicleComponent*)_controlComponet));
+
         } else {
             qWarning() << "Internal error";
         }
