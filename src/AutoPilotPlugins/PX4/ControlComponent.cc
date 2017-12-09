@@ -72,5 +72,6 @@ QUrl ControlComponent::setupSource(void) const
 
 QUrl ControlComponent::summaryQmlSource(void) const
 {
-    return QUrl::fromUserInput("qrc:/qml/PX4RadioComponentSummary.qml");
+    //return QUrl::fromUserInput("qrc:/qml/ControlComponentSummary.qml").;
+    return QUrl::fromLocalFile("C:/work/qgroundcontrol/src/AutoPilotPlugins/PX4/ControlComponentSummary.qml");
 }

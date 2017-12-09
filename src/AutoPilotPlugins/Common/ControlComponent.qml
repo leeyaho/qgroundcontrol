@@ -266,7 +266,7 @@ SetupPage {
                         Item { width: 1; height: 1; Layout.columnSpan: 2 }
 
                         QGCLabel {
-                            text:               qsTr("divider")
+                            text:               qsTr("Pump power")
                         }
 
                         FactTextField {
@@ -276,7 +276,7 @@ SetupPage {
 
                         QGCButton {
                             id:                 voltMultCalculateButton
-                            text:               "Calculate"
+                            text:               "Calibrate"
                             onClicked:          showDialog(calcVoltageDividerDlgComponent, qsTr("Calculate Voltage Divider"), powerPage.showDialogDefaultWidth, StandardButton.Close)
                         }
 
@@ -294,16 +294,7 @@ SetupPage {
                         anchors.right:  parent.right
                         spacing:        ScreenTools.defaultFontPixelWidth
 
-                        QGCLabel {
-                            color:              qgcPal.warningText
-                            wrapMode:           Text.WordWrap
-                            text:               qsTr("WARNING: Propellers must be removed from vehicle prior to performing ESC calibration.")
-                            Layout.fillWidth:   true
-                        }
 
-                        QGCLabel {
-                            text: qsTr("You must use USB connection for this operation.")
-                        }
 
                         QGCButton {
                             text:       qsTr("Calibrate")
