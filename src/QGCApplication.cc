@@ -246,7 +246,7 @@ QGCApplication::QGCApplication(int &argc, char* argv[], bool unitTesting)
         // name. Also we want to run unit tests with clean settings every time.
         //setApplicationName(QString("%1_unittest").arg(QGC_APPLICATION_NAME));
     } else {
-        setApplicationName("RoboBlockSystem");
+        setApplicationName("RoboBlock FC V1.0");
     }
     setOrganizationName(QGC_ORG_NAME);
     setOrganizationDomain(QGC_ORG_DOMAIN);

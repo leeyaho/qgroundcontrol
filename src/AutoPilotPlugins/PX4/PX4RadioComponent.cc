@@ -66,8 +66,8 @@ QStringList PX4RadioComponent::setupCompleteChangedTriggerList(void) const
 
 QUrl PX4RadioComponent::setupSource(void) const
 {
-    //return QUrl::fromUserInput("qrc:/qml/RadioComponent.qml");
-    return QUrl::fromLocalFile("C:/work/qgroundcontrol/src/AutoPilotPlugins/Common/RadioComponent.qml");
+    return QUrl::fromUserInput("qrc:/qml/RadioComponent.qml");
+    //return QUrl::fromLocalFile("C:/work/qgroundcontrol/src/AutoPilotPlugins/Common/RadioComponent.qml");
 }
 
 QUrl PX4RadioComponent::summaryQmlSource(void) const

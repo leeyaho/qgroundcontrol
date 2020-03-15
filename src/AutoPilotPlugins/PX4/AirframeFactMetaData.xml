@@ -19,6 +19,38 @@
       <output name="AUX3">feed-through of RC AUX3 channel</output>
     </airframe>
   </airframe_group>
+  <airframe_group image="XX" name="ad bollone X4">
+    <airframe id="7123" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;" name="ad bollone X4">
+      <class>Copter</class>
+      <maintainer>Lorenz Meier &lt;lorenz@px4.io&gt;</maintainer>
+      <type>Hexarotor +</type>
+      <output name="MAIN1">motor1</output>
+      <output name="MAIN2">motor2</output>
+      <output name="MAIN3">motor3</output>
+      <output name="MAIN4">motor4</output>
+      <output name="MAIN5">motor5</output>
+      <output name="MAIN6">motor6</output>
+      <output name="AUX1">feed-through of RC AUX1 channel</output>
+      <output name="AUX2">feed-through of RC AUX2 channel</output>
+      <output name="AUX3">feed-through of RC AUX3 channel</output>
+    </airframe>
+  </airframe_group>
+  <airframe_group image="YY" name="ad bollone Y3">
+    <airframe id="7124" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;" name="ad bollone Y3">
+      <class>Copter</class>
+      <maintainer>Lorenz Meier &lt;lorenz@px4.io&gt;</maintainer>
+      <type>Hexarotor +</type>
+      <output name="MAIN1">motor1</output>
+      <output name="MAIN2">motor2</output>
+      <output name="MAIN3">motor3</output>
+      <output name="MAIN4">motor4</output>
+      <output name="MAIN5">motor5</output>
+      <output name="MAIN6">motor6</output>
+      <output name="AUX1">feed-through of RC AUX1 channel</output>
+      <output name="AUX2">feed-through of RC AUX2 channel</output>
+      <output name="AUX3">feed-through of RC AUX3 channel</output>
+    </airframe>
+  </airframe_group>
   <airframe_group image="Y6B" name="Hexarotor Coaxial">
     <airframe id="11001" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;" name="Generic Hexa coaxial geometry">
       <class>Copter</class>
@@ -578,6 +610,48 @@ passthrough of RC input and PWM output.</maintainer>
       <output name="MAIN6">Tilt servo left</output>
       <output name="MAIN7">Elevon right</output>
       <output name="MAIN8">Elevon left</output>
+    </airframe>
+  </airframe_group>
+  <airframe_group image="QuadRotorX" name="Quad Boolon">
+    <airframe id="10020" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;" name="3DR DIY Quad">
+      <class>Copter</class>
+      <maintainer>Lorenz Meier &lt;lorenz@px4.io&gt;</maintainer>
+      <type>Quadrotor x</type>
+    </airframe>
+    <airframe id="10021" maintainer="Leon Mueller &lt;thedevleon&gt;" name="H4 680mm with Z1 Tiny2 Gimbal">
+      <class>Copter</class>
+      <maintainer>Leon Mueller &lt;thedevleon&gt;</maintainer>
+      <type>Quadrotor x</type>
+    </airframe>
+    <airframe id="4001" maintainer="Lorenz Meier &lt;lorenz@px4.io&gt;" name="Generic Quadrotor X config">
+      <class>Copter</class>
+      <maintainer>Lorenz Meier &lt;lorenz@px4.io&gt;</maintainer>
+      <type>Quadrotor x</type>
+      <output name="MAIN1">motor 1</output>
+      <output name="MAIN2">motor 2</output>
+      <output name="MAIN3">motor 3</output>
+      <output name="MAIN4">motor 4</output>
+      <output name="MAIN5">feed-through of RC AUX1 channel</output>
+      <output name="MAIN6">feed-through of RC AUX2 channel</output>
+      <output name="AUX1">feed-through of RC AUX1 channel</output>
+      <output name="AUX2">feed-through of RC AUX2 channel</output>
+      <output name="AUX3">feed-through of RC AUX3 channel</output>
+      <output name="AUX4">feed-through of RC FLAPS channel</output>
+    </airframe>
+    <airframe id="4002" maintainer="Leon Mueller &lt;thedevleon&gt;" name="Generic Quadrotor X config with mount (e.g. gimbal)">
+      <class>Copter</class>
+      <maintainer>Leon Mueller &lt;thedevleon&gt;</maintainer>
+      <type>Quadrotor x</type>
+      <output name="MAIN1">motor 1</output>
+      <output name="MAIN2">motor 2</output>
+      <output name="MAIN3">motor 3</output>
+      <output name="MAIN4">motor 4</output>
+      <output name="MAIN5">feed-through of RC AUX1 channel</output>
+      <output name="MAIN6">feed-through of RC AUX2 channel</output>
+      <output name="AUX1">Mount pitch</output>
+      <output name="AUX2">Mount roll</output>
+      <output name="AUX3">Mount yaw</output>
+      <output name="AUX4">Mount retract</output>
     </airframe>
   </airframe_group>
 </airframes>

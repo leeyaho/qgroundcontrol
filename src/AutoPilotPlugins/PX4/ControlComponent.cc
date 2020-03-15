@@ -66,12 +66,12 @@ QStringList ControlComponent::setupCompleteChangedTriggerList(void) const
 
 QUrl ControlComponent::setupSource(void) const
 {
-    //    return QUrl::fromL("qrc:/qml/ControlComponent.qml");
-    return QUrl::fromLocalFile("C:/work/qgroundcontrol/src/AutoPilotPlugins/Common/ControlComponent.qml");
+     return QUrl::fromUserInput("qrc:/qml/ControlComponent.qml");
+    //return QUrl::fromLocalFile("C:/work/qgroundcontrol/src/AutoPilotPlugins/Common/ControlComponent.qml");
 }
 
 QUrl ControlComponent::summaryQmlSource(void) const
 {
-    //return QUrl::fromUserInput("qrc:/qml/ControlComponentSummary.qml").;
-    return QUrl::fromLocalFile("C:/work/qgroundcontrol/src/AutoPilotPlugins/PX4/ControlComponentSummary.qml");
+    return QUrl::fromUserInput("qrc:/qml/ControlComponentSummary.qml");
+    //return QUrl::fromLocalFile("C:/work/qgroundcontrol/src/AutoPilotPlugins/PX4/ControlComponentSummary.qml");
 }

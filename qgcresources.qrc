@@ -167,6 +167,8 @@
         <file alias="APM/BrandImageSub">src/FirmwarePlugin/APM/APMBrandImageSub.png</file>
         <file alias="PX4/BrandImage">src/FirmwarePlugin/PX4/PX4BrandImage.png</file>
         <file alias="control.png">src/AutoPilotPlugins/PX4/Images/control.png</file>
+        <file alias="Airframe/YY">src/AutoPilotPlugins/Common/Images/YY.svg</file>
+        <file alias="Airframe/XX">src/AutoPilotPlugins/Common/Images/XX.svg</file>
     </qresource>
     <qresource prefix="/res">
         <file alias="action.svg">resources/action.svg</file>

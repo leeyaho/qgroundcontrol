@@ -391,13 +391,11 @@ HEADERS += \
     src/api/QGCCorePlugin.h \
     src/api/QGCOptions.h \
     src/api/QmlComponentInfo.h \
-    src/AutoPilotPlugins/PX4/ControlComponent.h
 
 SOURCES += \
     src/api/QGCCorePlugin.cc \
     src/api/QGCOptions.cc \
     src/api/QmlComponentInfo.cc \
-    src/AutoPilotPlugins/PX4/ControlComponent.cc
 
 #
 # Unit Test specific configuration goes here (requires full debug build with all plugins)
